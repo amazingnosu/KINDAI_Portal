@@ -1,0 +1,781 @@
+
+<!doctype html>
+<html lang="ja" data-bs-theme="auto">
+  <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.112.5">
+      <title>金沢大学医学類（2024入学）　非公式ポータルサイト</title>
+
+      <link rel="canonical" href="https://amazingnosu.github.io/KINDAIPortal/index.html">
+      <link rel="icon" href="kulogo1.jpg">
+      <link rel="apple-touch-icon" href="kulogo1.jpg">
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .nav-link svg {
+        fill: #8a8a8a; /* 少し柔らかいグレー */
+      }
+      .nav-link.active svg {
+        fill: #ffb7b2; /* 選んでいる時はパステルピンク、など */
+      }
+
+    </style>
+
+    <style>
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    <style>
+      body {
+        background-color: #fdfaf5; /* 優しいアイボリー */
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #5a5a5a;
+      }
+
+      /* プルダウン本体 */
+      .form-select {
+          color: #5a5a5a !important; /* 文字色 */
+          background-color: #ffffff; /* 背景色 */
+          border: 1px solid #ede7dc; /* 枠線をアイボリー系に */
+          border-radius: 10px;
+      }
+
+      /* プルダウンの中の選択肢（option） */
+      .form-select option {
+          color: #5a5a5a;
+          background-color: #ffffff;
+      }
+
+      .card {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        border: none;
+        transition: transform 0.2s;
+      }
+
+      .card-text {
+        color: #5a5a5a !important; /* 濃いめのチャコールグレー（読みやすさと柔らかさ） */
+        font-weight: 500;
+      }
+
+      /* 外側のdivが term-spring のとき */
+      .term-spring .card {
+        border-left: 7px solid #ffdeeb !important; /* サクラピンク */
+      }
+
+      /* 外側のdivが term-fall のとき */
+      .term-fall .card {
+        border-left: 7px solid #e2f0d9 !important; /* セージグリーン */
+      }
+
+      /* 外側のdivが term-winter のとき */
+      .term-winter .card {
+        border-left: 7px solid #d1e9ff !important; /* スカイブルー */
+      }
+
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      
+    </style>
+      
+      <!-- Custom styles for this template -->
+      <link href="sidebars.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="link" viewBox="0 0 16 16">
+        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+      </symbol>
+
+      <symbol id="calendar" viewBox="0 0 16 16">
+        <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+        <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+      </symbol>
+    </svg>
+    <div class="d-flex flex-nowrap">
+      <aside class="d-flex flex-column flex-shrink-0" style="width: 4.5rem; height: 100vh; position: sticky; top: 0; background-color: #ede7dc; border-right: 1px solid #f2eee8;">
+        <div class="d-flex flex-column flex-shrink-0" style="width: 4.5rem; background-color: #ede7dc;">
+          <a href="index.html" class="d-flex align-items-center justify-content-center py-2 mb-1 link-body-emphasis text-decoration-none border-bottom" title="ホーム" style="border-bottom: 1px solid rgba(106, 106, 106, 0.2) !important;">
+            <img src="kulogo1.jpg" alt="KULogo" width="48" height="48">
+          </a>
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center" style="border-right: 1px solid #f2eee8;">
+            <li class="nav-item">
+              <a href="calendar.html" class="nav-link py-3 border-bottom rounded-0" aria-current="page" title="スケジュール"   style="border-bottom: 1px solid rgba(106, 106, 106, 0.2) !important;">
+                <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#calendar"/></svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="link.html" class="nav-link py-3 border-bottom rounded-0" aria-current="page" title="リンク集"  style="border-bottom: 1px solid rgba(106, 106, 106, 0.2) !important;">
+                <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#link"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+
+      <main class="flex-grow-1" style="overflow-y: auto;">
+
+        <div class="container mb-1">
+
+          <h2 class="mt-4 mb-4 fw-bold" style="color: #6a6a6a; border-bottom: 2px solid #ede7dc; padding-bottom: 10px;">
+          🎓 LMS / 出席状況確認
+          </h2>
+
+          <div class="row g-2 align-items-center">
+            <div class="col-auto">
+              <label class="me-2 fw-bold" style="color: #6a6a6a;">学年:</label>
+              <select id="gradeSelector" class="form-select w-auto" style="border-radius: 10px; border-color: rgba(106, 106, 106, 0.2);">
+                <option value="all">すべて</option>
+                <option value="g2" selected>2年生</option>
+                <option value="g3">3年生</option>
+              </select>
+            </div>
+            <div class="col-auto ms-md-3">
+              <label class="me-2 fw-bold" style="color: #6a6a6a;">学期:</label>
+              <select id="termSelector" class="form-select w-auto" style="border-radius: 10px; border-color: rgba(106, 106, 106, 0.2);">
+                <option value="all">すべて</option>
+                <option value="term-spring">春学期</option>
+                <option value="term-fall">秋学期</option>
+                <option value="term-winter" selected>冬学期</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="album py-5">
+          <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              
+              <!--生化学１-->
+              <div class="col course-card g2 term-spring">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🧪 生化学１</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341232000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41232" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--生化学２-->
+              <div class="col course-card g2 term-spring">
+                <div class="card shadow-sm ">
+                  <div class="card-body">
+                    <p class="card-text">🧪 生化学２</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341233000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41233" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!--生命情報科学１-->
+              <div class="col course-card g2 term-spring">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">💻 生命情報科学１</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341232000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-11004" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--生命情報科学２-->
+              <div class="col course-card g2 term-spring">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">💻 生命情報科学２</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035311005000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-11005" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--人体解剖学-->
+              <div class="col course-card g2 term-spring">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🦴 人体解剖学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035341227000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41227" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--神経解剖学-->
+              <div class="col course-card g2 term-spring">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🧠 神経解剖学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035341137000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41137" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--発生学-->
+              <div class="col course-card g2 term-spring">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🐣 発生学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035341229000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41229" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--組織学-->
+              <div class="col course-card g2 term-spring term-fall">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🔬 組織学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341228000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41228" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--器官生理学-->
+              <div class="col course-card g2 term-fall">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🫀 器官生理学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341230000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41230" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--神経生理学-->
+              <div class="col course-card g2 term-fall">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">⚡ 神経生理学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341231000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41231" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--動物実験と再生医学-->
+              <div class="col course-card g2 term-fall">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🐭 動物実験と再生医学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035341152000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41152" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <!--社会科学・行動科学-->
+              <div class="col course-card g2 term-fall">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">👥 社会科学・行動科学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341215000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41215" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--細菌感染学-->
+              <div class="col course-card g2 term-winter">
+                <div class="card shadow-sm">                  
+                  <div class="card-body">
+                    <p class="card-text">🧫 細菌感染学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341239000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41239" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--寄生虫学-->
+              <div class="col course-card g2 term-winter">
+                <div class="card shadow-sm">                 
+                  <div class="card-body">
+                    <p class="card-text">🦠 寄生虫学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341240000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41240" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--ウイルス感染学-->
+              <div class="col course-card g2 term-winter">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">👾 ウイルス感染学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341238000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41238" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--法医学１A-->
+              <div class="col course-card g2 term-winter">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">⚖️ 法医学１A</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341243000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41243" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--免疫学-->
+              <div class="col course-card g2 term-winter">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🛡️ 免疫学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25045341241000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41241" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--遺伝学-->
+              <div class="col course-card g2 term-winter">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🧬 遺伝学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035341235000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41235" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--国際保健学-->
+              <div class="col course-card g2 term-winter">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🌐 国際保健学</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035341148100&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41148.1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--医学英語１-->
+              <div class="col course-card g2 term-spring term-fall">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🔤 医学英語１</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035341158000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41158" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--医学英語２-->
+              <div class="col course-card g2 term-fall term-winter">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">🔤 医学英語２</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                          <a href="https://acanthus.cis.kanazawa-u.ac.jp/base/lms-course/sso-link/?courseId=25035341159000&systemType=1" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            LMS
+                          </a>
+                          <a href="https://eduweb.sta.kanazawa-u.ac.jp/Portal/StudentApp/Attendance/AttendDetail.aspx?lct_year=2025&lct_cd=53-41159" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-outline-secondary">
+                            出席
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </main>
+    </div>
+
+    <script>
+      const gradeSelector = document.getElementById('gradeSelector');
+      const termSelector = document.getElementById('termSelector');
+      const cards = document.querySelectorAll('.course-card');
+
+      function filterCards() {
+        const selectedGrade = gradeSelector.value;
+        const selectedTerm = termSelector.value;
+
+        cards.forEach(card => {
+          // 学年の条件チェック (すべて、もしくは選択した学年と一致)
+          const matchesGrade = (selectedGrade === 'all' || card.classList.contains(selectedGrade));
+          // 学期の条件チェック (すべて、もしくは選択した学年と一致)
+          const matchesTerm = (selectedTerm === 'all' || card.classList.contains(selectedTerm));
+
+          // 両方の条件を満たす場合のみ表示
+          if (matchesGrade && matchesTerm) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      // 両方のプルダウンにイベントリスナーを設定
+      gradeSelector.addEventListener('change', filterCards);
+      termSelector.addEventListener('change', filterCards);
+
+      // 初回読み込み時にも実行（デフォルトの「3年生」などでフィルタリングするため）
+      filterCards();
+    </script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="sidebars.js"></script>
+  </body>
+</html>
